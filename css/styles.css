@@ -1,0 +1,265 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+.logo img{
+ width: 100px;
+ height: 60px;
+
+}
+
+.logo p{
+    font-family: "Chelsea Market", serif;
+    font-weight: 400;
+    font-size: 39px;
+    color: #FFFFFF;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+.card-badge{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: #4A9C80;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.bg-container{
+    background-image: url(../img/unsplash_vLQraPNUTUc\ \(1\).jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    margin: 0; 
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.hero-content{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 130px;
+}
+
+.hero-image{
+    width: 100px;
+    height: 80px;
+}
+
+.hero-title{
+    font-family: var(--font-Chelsea);
+    font-weight: 400;
+    font-size: 55px;
+    color: #FFFFFF;
+}
+
+.hero-title2{
+    font-family:var(--font-popins);
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 24px;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-des{
+    font-family: var(--font-popins);
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 13px;
+    
+}
+/*end of hero section*/
+.categories{
+   max-width: 945px;
+   align-items: center;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.buttons{
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.button1{
+    width: 40px;
+    height: 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    
+}
+.active{
+    background-color: var(--primary-color);
+}
+
+.button{
+    width: 122px;
+    height: 26px;
+    border-radius: 100px;
+    color: #F0F0F0;
+    color: black;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+}
+
+
+/*start of main section*/
+.main-section{
+   align-items: center;
+   margin-top: 60px;
+}
+
+.cards-container{
+   max-width: 700px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   gap: 40px;
+}
+.card{
+    max-width: 170px;
+    height: 250px;
+    background-color: #89898921;
+    
+}
+
+.card-img img{
+    width: 140px;
+    height: 165px;
+    margin-left: 9px;
+}
+
+.card-title{
+    font-family:var(--font-Montserrat);
+    font-size: 10px;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+.card-des{
+    font-size: 13px;
+    padding-left: 10px;
+    margin-top: 3px;
+    color: #C4C4C4;
+    white-space: nowrap;           /* Ensure text stays on one line */
+    overflow: hidden;              /* Hide any overflowed text */
+    text-overflow: ellipsis;       /* Add an ellipsis (...) for overflowed text */
+    max-width: 250px; 
+}
+
+.card-buttons{
+    padding-left: 10px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price{
+    color: black;
+    font-weight: 900;
+}
+
+.add-to-card{
+    display: flex;
+    height: 20px;
+    padding: 3px;
+    border-radius: 7px;
+    border: none;
+    background-color:#4A9C80;
+    font-family: var(--font-Montserrat);
+    color: #FFFDFD;
+    font-weight: 800;
+    font-size: 10px;
+    white-space: nowrap;/* Ensure text stays on one line */  
+    cursor: pointer; 
+}
+
+.heart {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*end of main section*/
+/*footer-section*/
+.footer-section {
+    background-color: #035846;
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secton {
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%; 
+    max-width: 1000px; 
+}
+
+
+
+/*footer-section*/
+
+
+
+
