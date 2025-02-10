@@ -8,7 +8,7 @@
 body{
     background-color: white;
 }
-
+/* product section */
 .product-section{
     max-width: 1200px;
     max-height: 700px;
@@ -82,11 +82,19 @@ position: relative;
     color: white;
     padding: 3px;
 }
+.actual-price{
+    text-decoration: line-through;
+    color: red;
+}
+
+.discount-price{
+    font-size: 28px;
+}
 product-quantity{
     display: flex;
     align-items: center;
-    gap: 0;
 }
+
 .product-quantity button:first-of-type{
    padding: 7px 16px;
    border: 1px solid gray;
@@ -107,3 +115,68 @@ product-quantity{
    border: 1px solid gray;
    background-color: #fff;
  }
+
+ .product-btn{
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 20px;
+    border: solid red;
+ }
+ .product-btn:hover{
+    background-color: red;
+ }
+/* product section */
+
+ /* product description */
+ .section-description{
+    max-width: 1200px;
+    max-height: 700px;
+    border: solid red;
+    margin: 24px auto;
+    
+   
+ }
+
+ .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    
+ }
+
+ .header h2 {
+    font-size: 14px;
+    font-weight: 400;
+ }
+
+
+ .product-content {
+    max-width: 1200px;
+    max-height: 700px; /* Allow it to expand */
+    padding: 24px;
+    flex-wrap: wrap;
+}
+.product-des{
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+.tab-1-content{
+    display: none;
+}
+
+.tab-2-content{
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: gainsboro;
+    display: none;
+}
+
+tab-3-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+ /* product description */
