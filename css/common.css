@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+}
+
+.flex-colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.gap{
+    gap: 20px
+}
+
+.space{
+    margin-block: 20px;
+}

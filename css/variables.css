@@ -1,6 +1,11 @@
-:root{
-   --primary-color:#4A9C80;
-   --font-Chelsea:"Chelsea Market", serif;
-   --font-popins: "Poppins", serif;
-   --font-Montserrat:"Montserrat", serif;
+:root {
+  --primary-color: #4a9c80;
+  --secondary-color: #ffffff;
+  --border-color: #e4e2e2;
+  --text-color: #333;
+  --grey-color: grey;
+  --font-Chelsea: "Chelsea Market", serif;
+  --font-popins: "Poppins", serif;
+  --font-Montserrat: "Montserrat", serif;
 }
+/* copyright this code is writed by  leonard Dani*/

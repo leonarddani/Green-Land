@@ -71,6 +71,7 @@ function changeQuantity(id, action) {
   renderCart();
   calculateTotal();
 }
+//<!-- copyright this code is writed by  leonard Dani -->
 
 function calculateTotal() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -105,3 +106,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCart();
   calculateTotal();
 });
+//<!-- copyright this code is writed by  leonard Dani -->
+

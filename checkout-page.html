@@ -170,6 +170,9 @@
                 // Show success modal
                 document.getElementById("success-modal").style.display = "block";
           
+                // Clear local storage
+                localStorage.removeItem('card');
+          
                 // Clear form fields
                 document.getElementById("payment-form").reset();
               }
@@ -201,6 +204,7 @@
               event.target.value = event.target.value.replace(/\D/g, ""); // Remove non-numeric characters
             });
           </script>
+          
           
     
     <script src="js/card.js"></script>

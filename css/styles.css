@@ -1,3 +1,4 @@
+/* copyright this code is writed by  leonard Dani*/
 @import url(variables.css);
 *{
     margin: 0;
@@ -124,6 +125,7 @@
     flex-wrap: wrap;
    
 }
+/* copyright this code is writed by  leonard Dani*/
 
 .button1{
     width: 40px;
@@ -170,6 +172,8 @@
     background-color: #89898921;
     
 }
+/* copyright this code is writed by  leonard Dani*/
+
 
 .card-img img{
     width: 140px;
@@ -223,6 +227,7 @@
     white-space: nowrap;/* Ensure text stays on one line */  
     cursor: pointer; 
 }
+/* copyright this code is writed by  leonard Dani*/
 
 .heart {
     width: 23px;
@@ -257,6 +262,7 @@
 }
 
 
+/* copyright this code is writed by  leonard Dani*/
 
 /*footer-section*/
 
