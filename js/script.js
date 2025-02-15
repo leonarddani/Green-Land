@@ -50,18 +50,20 @@ function renderProducts(products) {
     const productCard = document.createElement("div");
     productCard.classList.add("card");
     productCard.innerHTML = `
-            <div class="card-img">
-                <img src="${product.thumbnail}" alt="${product.title}">
-            </div>
-            <div class="card-content">
-                <h1 class="card-title">${product.title}</h1>
-                <p class="card-des">${product.description}</p>
-                <div class="card-buttons">
-                    <span class="price">$${product.price}</span>
-                    <button class="add-to-card" onclick="addToCart(${product.id}, '${product.title}', ${product.price}, '${product.thumbnail}', '${product.description}')">Add to Cart</button>
-                    <span class="heart"><i class="fa-solid fa-heart"></i></span>
-                </div>
-            </div>
+       <a href="product-details.html?id=${product.id} name="${product.title}" class="product-link">
+        <div class="card-img">
+          <img src="${product.thumbnail}" alt="${product.title}">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">${product.title}</h1>
+          <p class="card-des">${product.description}</p>
+          <div class="card-buttons">
+            <span class="price">$${product.price}</span>
+            <button class="add-to-card" onclick="addToCart(${product.id}, '${product.title}', ${product.price}, '${product.thumbnail}', '${product.description}')">Add to Cart</button>
+            <span class="heart"><i class="fa-solid fa-heart"></i></span>
+          </div>
+        </div>
+      </a>
         `;
     productsContainer.appendChild(productCard);
   });

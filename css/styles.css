@@ -28,7 +28,9 @@
     font-family: "Chelsea Market", serif;
     font-weight: 400;
     font-size: 39px;
-    color: #FFFFFF;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
 }
 
 .navbar ul{

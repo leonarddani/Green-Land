@@ -8,14 +8,72 @@
 body{
     background-color: white;
 }
+/* header */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-block: 20px;
+}
+.logo{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+.logo img{
+ width: 100px;
+ height: 60px;
+
+}
+
+.logo p{
+    font-family: "Chelsea Market", serif;
+    font-weight: 400;
+    font-size: 39px;
+    color:black;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    color: red;
+    
+}
+
+
+.card-badge{
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    background-color: #4A9C80;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+/* header */
 /* product section */
 .product-section{
     max-width: 1200px;
     max-height: 700px;
-    border: solid red;
+    border: 0.5px solid rgb(234, 234, 234);
     margin: 0 auto;
     display: flex;
     padding: 24px;
+    border-radius: 10px;
 }
 
 .product-contaner{
@@ -26,14 +84,14 @@ position: relative;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border:  10px solid rgb(104, 103, 103) ;
+    border: 0.5px solid rgb(234, 234, 234);
 }
 .product-carusel img{
     width:100px;
     height: 100px;
     object-fit: contain;
     cursor: pointer;
-    border: solid green;
+    border: 0.5px solid rgb(234, 234, 234);
 }
 
 .product-carusel button{
@@ -41,6 +99,8 @@ position: relative;
    height: 40px;
    cursor: pointer;
 }
+
+
 
 .product-image img{
     margin-top: 100px;
@@ -93,6 +153,7 @@ position: relative;
 product-quantity{
     display: flex;
     align-items: center;
+    
 }
 
 .product-quantity button:first-of-type{
@@ -103,6 +164,11 @@ product-quantity{
    cursor: pointer;
 }
 
+.product-quantity button:hover:first-of-type{
+    border-radius: 40px 20px;
+    background-color: red;
+}
+
 .product-quantity button:last-of-type{
     padding: 7px 16px;
     border: 1px solid gray;
@@ -110,10 +176,31 @@ product-quantity{
     border-bottom-right-radius:8px;
     cursor: pointer;
 }
- .product-quantity span{
+
+.product-quantity button:hover:last-of-type{
+    border-radius: 40px 20px;
+    background-color: red;
+}
+ .quantity{
+   display: flex;
+   align-items: center;
    padding: 6px 16px;
    border: 1px solid gray;
    background-color: #fff;
+ }
+ 
+ .stock-quantity{
+    border: none;
+    padding: 4px;
+ }
+ 
+ .product-quantity p:first-of-type{
+    background-color: orangered;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: white;
  }
 
  .product-btn{
@@ -124,14 +211,17 @@ product-quantity{
  }
  .product-btn:hover{
     background-color: red;
+    color: white;
  }
 /* product section */
 
- /* product description */
+
+/* product description */
  .section-description{
     max-width: 1200px;
     max-height: 700px;
-    border: solid red;
+    border: 0.5px solid rgb(234, 234, 234);
+    border-radius: 10px;
     margin: 24px auto;
     
    
@@ -161,8 +251,20 @@ product-quantity{
     word-wrap: break-word; 
     overflow-wrap: break-word; 
 }
+
+.tab-1,.tab-2,.tab-3{
+    cursor: pointer;
+}
+.active{
+    border-bottom: 5px solid red;
+    border-radius: 40px;
+}
 .tab-1-content{
-    display: none;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    
 }
 
 .tab-2-content{
@@ -170,7 +272,8 @@ product-quantity{
     justify-content: space-between;
     gap: 20px;
     background-color: gainsboro;
-    display: none;
+    
+   
 }
 
 tab-3-content{
@@ -178,5 +281,6 @@ tab-3-content{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    
 }
- /* product description */
+/* product description */
